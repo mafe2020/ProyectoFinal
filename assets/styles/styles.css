@@ -89,48 +89,85 @@ nav{
     color: black;
     font-weight: bold;
 }
-.mafer{
-    width: 300px;
-    height: 300px;
-    margin: 50px;
-    background-color: bisque;
-}
-.mafer:hover{
-    background-color: #ced4da;
+
+
+/*personajes*/
+
+#personajes{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/*grid*/
-#characters{
-    position: relative;
-    
-}
 .galeria{
-    width: 100%;
-    max-width: 950px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-    grid-auto-rows: 100px;
-    grid-auto-flow: dense;
-    grid-gap: 5px;
-    background-color:darkgrey;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(3,150px);
+    gap: 5px;
 }
-.galeria .item{
+
+.caja-imagen:nth-child(1){
+    grid-column: 1/span 1;
+    grid-row: 1/span 2;
+}
+.caja-imagen:nth-child(6){
+    grid-column: 2/span 1;
+    grid-row: 2/span 2;
+}
+.caja-imagen:nth-child(7){
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+}
+.caja-imagen:nth-child(8){
+    grid-column: 6/span 2;
+    grid-row: 1/span 1;
+}
+.caja-imagen:nth-child(4){
+    grid-column: 3/span 2;
+    grid-row: 3/span 1;
+}
+.caja-imagen:nth-child(9){
+    grid-column: 7/span 1;
+    grid-row: 2/span 2;
+}
+.caja-imagen:nth-child(10){
+    grid-column: 5/span 2;
+    grid-row: 2/span 2;
+}
+.bibliografia{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
-.galeria .item:nth-child(3n+1){
-    grid-column: span 2;
-    grid-row: span 2;
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: black;
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0.25);
+    opacity: 0;
 }
-.galeria .item img{
+.bibliografia:hover .overlay{
+    opacity: 1;
+}
+.galeria .caja-imagen:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.caja-imagen img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.galeria .item:hover img{
-    transform: scale(1.1);
-}
-
 
 
 @media  screen and (min-width:768px){
