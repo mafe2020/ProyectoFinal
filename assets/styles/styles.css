@@ -171,22 +171,26 @@ nav{
 
 /*authors*/
 #authors{
-   max-width: 1200px;
-   margin: 0 auto;
+   width: 100%;
 }
 .contenedor{
     background-color: #adb5bd;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 .lista{
     display: flex;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    width: 500px;
+    width: 450px;
     height: 210px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, .25);
     border-radius: 15px;
+    margin: 10px;
+    transition: all .5s;
 }
 .lista .picture{
     height: 90%;
@@ -199,6 +203,7 @@ nav{
    height: 100%;
    border-radius: 20px;
    object-fit: cover;
+   filter: grayscale(1);
 }
  .descripcion{
     width: 65%;
@@ -208,28 +213,29 @@ nav{
     padding: 3px;
     margin-bottom: 3px;
  }
- .iconos{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 5px;
-    align-items: center;
+ .picture{
+    position: relative;
  }
  
- 
-
-/*
-.lista{
+ .picture .sarah{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 5px;
     display: flex;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    flex-direction: row;
-    width: 250px;
-    margin: 5px;
+    justify-content: center;
     align-items: center;
-   
-    background-color: rgba(255, 255, 255, .25);
-}*/
+ }
+  .sarah a i{
+    color: white;
+    margin-left: 5px;
+  }
 
+  .iconos a i{
+    color: black;
+    font-size:25px;
+  }
+ 
 
 @media  screen and (min-width:768px){
     #boton:checked~.menu li{
@@ -267,5 +273,10 @@ nav{
    .menu li a{
     font-size: 12px;
    }
+
+   .lista{
+    width: 500px;
+   }
+   
 
 }
