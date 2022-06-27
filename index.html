@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <title>Header2</title>
 </head>
@@ -29,13 +30,36 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Library</a></li>
             </ul>
+            
         </nav>
+        <div id="quote">
+            <div class="quote-card">
+                <p class="primero">I can survive</p>
+                <p class="segundo">well</p>
+                <p>enough</p>
+                <p>on</p>
+                <p>my</p>
+                <p>own</p>
+                <p>if</p>
+                <p>given</p>
+                <p>the</p>
+                <p>proper</p>
+                <p class="tercero">reading material</p>
+            </div>
+        </div>
+        <div class="request">
+            <button class="boton-request">Request to Join</button>
+        </div>
     </header>
     <!--end nav-->
+
     <!--start trending-->
-    <section id="trending" class="text-center py-5">
+    <section id="trending" class="text-center">
+        <div class="trending-box">
+            <img src="./assets/img/trending.png" alt="foto-trending" class="foto-trending">
+            <p>TRENDING</p>
+        </div>
         <div class="container">
-            <h2>TRENDING</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card-body border rounded shadow-sm p-3 mb-5 bg-body">
@@ -74,105 +98,118 @@
 
     <!--start characters-->
     <section id="personajes">
-        <h3 class="text-center">CHARACTERS</h3>
-        <div class="galeria">
-            <div class="caja-imagen">
-                <a href="" class="bibliografia">
-                    <img src="./assets/img/bryce.jpg" alt="bryce">
-                    <div class="overlay">
-                        <span>Bryce</span>
-                    </div>
-                </a>
-                
+        <div class="personaje-box">
+            <div class="character-image">
+                <img src="./assets/img/backgroung-chrt.png" alt="charecters" class="chrt-2">
+                <img src="./assets/img/characters-2.png" alt="charecters" class="chrt-1">
             </div>
-            <div class="caja-imagen">
-                <a href="" class="bibliografia">
-                    <img src="./assets/img/lebahah.gif" alt="Lebahah">
-                    <div class="overlay">
-                        <span>Lebahah</span>
-                    </div>
-                </a>
-                
-            </div>
-            <div class="caja-imagen">
-                <a href="" class="bibliografia">
-                    <img src="./assets/img/chaol.jpg" alt="chaol">
-                    <div class="overlay">
-                        <span>Chaol</span>
-                    </div>
-                </a>
-                
-            </div>
-            <div class="caja-imagen">
-                <a href="" class="bibliografia">
-                    <img src="./assets/img/feyre.jpg" alt="feyre">
-                    <div class="overlay">
-                        <span>Feyre</span>
-                    </div>
-                </a>
-                
-            </div>
-            <div class="caja-imagen">
-                <a href="" class="bibliografia">
-                    <img src="./assets/img/hunt.jpg" alt="hunt">
-                    <div class="overlay">
-                        <span>Hunt</span>
-                    </div>
-                </a>
-                
-            </div>
-            <div class="caja-imagen">
-                <a href="" class="bibliografia">
-                    <img src="./assets/img/celaena.jpg" alt="Celaena">
-                    <div class="overlay">
-                        <span>Celaena</span>
-                    </div>
-                </a>
-            </div>
-            <div class="caja-imagen">
-                <a href="#" class="bibliografia">
-                    <img src="./assets/img/poppy.jpg" alt="poppy">
-                <div class="overlay">
-                    <span>Poppy</span>
+        </div>
+        <div class="galeria-box">
+            <div class="galeria">
+                <div class="caja-imagen">
+                    <a href="https://crescentcity.fandom.com/wiki/Bryce_Quinlan" class="bibliografia" target="_blank">
+                        <img src="./assets/img/bryce.jpg" alt="bryce">
+                        <div class="overlay">
+                            <span>Bryce</span>
+                        </div>
+                    </a>
+                    
                 </div>
-                </a>
-                
-            </div>
-            <div class="caja-imagen">
-                <a href="#" class="bibliografia">
-                    <img src="./assets/img/rhysand.jpg" alt="rhysand">
+                <div class="caja-imagen">
+                    <a href="https://crescentcity.fandom.com/wiki/Lehabah" class="bibliografia" target="_blank">
+                        <img src="./assets/img/lebahah.gif" alt="Lehabah">
+                        <div class="overlay">
+                            <span>Lehabah</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://trono-de-cristal.fandom.com/es/wiki/Chaol_Westfall" class="bibliografia" target="_blank">
+                        <img src="./assets/img/chaol.jpg" alt="chaol">
+                        <div class="overlay">
+                            <span>Chaol</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://una-corte-de-rosas-y-espinas.fandom.com/es/wiki/Feyre_Archeron" class="bibliografia" target="_blank">
+                        <img src="./assets/img/feyre.jpg" alt="feyre">
+                        <div class="overlay">
+                            <span>Feyre</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://crescentcity.fandom.com/wiki/Hunt_Athalar" class="bibliografia" target="_blank">
+                        <img src="./assets/img/hunt.jpg" alt="hunt">
+                        <div class="overlay">
+                            <span>Hunt</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://trono-de-cristal.fandom.com/es/wiki/Aelin_Ashryver_Galathynius" class="bibliografia" target="_blank">
+                        <img src="./assets/img/celaena.jpg" alt="Celaena">
+                        <div class="overlay">
+                            <span>Celaena</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://bloodandash.fandom.com/wiki/Penellaphe_Da%27Neer" class="bibliografia" target="_blank">
+                        <img src="./assets/img/poppy.jpg" alt="poppy">
                     <div class="overlay">
-                        <span>Rhysand</span>
+                        <span>Poppy</span>
                     </div>
-                </a>
-                
-            </div>
-            <div class="caja-imagen">
-                <a href="#" class="bibliografia">
-                    <img src="./assets/img/rowan.jpg " alt="rowan">
-                    <div class="overlay">
-                        <span>Rowan</span>
-                    </div>
-                </a>
-                
-            </div>
-            <div class="caja-imagen">
-                <a href="#" class="bibliografia">
-                    <img src="./assets/img/feyre2.jpg" alt="feyre">
-                    <div class="overlay">
-                        <span>Feyre</span>
-                    </div>
-                </a>
-                
+                    </a>
+                    
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://una-corte-de-rosas-y-espinas.fandom.com/es/wiki/Rhysand" class="bibliografia" target="_blank">
+                        <img src="./assets/img/rhysand.jpg" alt="rhysand">
+                        <div class="overlay">
+                            <span>Rhysand</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://trono-de-cristal.fandom.com/es/wiki/Rowan_Whitethorn" class="bibliografia" target="_blank">
+                        <img src="./assets/img/rowan.jpg " alt="rowan">
+                        <div class="overlay">
+                            <span>Rowan</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="caja-imagen">
+                    <a href="https://una-corte-de-rosas-y-espinas.fandom.com/es/wiki/Feyre_Archeron" class="bibliografia" target="_blank">
+                        <img src="./assets/img/feyre2.jpg" alt="feyre">
+                        <div class="overlay">
+                            <span>Feyre</span>
+                        </div>
+                    </a>
+                    
+                </div>
             </div>
         </div>
     </section>
-    
     <!--end characters-->
 
     <!--start authors-->
     <section id="authors">
-        <h3 class="text-center py-5">Authors</h3>
+        <div class="authors-box">
+            <div class="horizontal">
+                <p>MUST KNOW</p>
+                <img src="./assets/img/authors-V.png" alt="authors" class="img-1">
+                <img src="./assets/img/authors.png" alt="authors" class="img-2">
+            </div>
+ 
+        </div>
         <div class="contenedor">
             <div class="lista">
                 <div class="picture">
@@ -190,7 +227,7 @@
                     <h4>Sara J. Mass.</h4>
                     <p>Sarah J. Maas is the #1 New York Times and internationally bestselling author of the Throne of Glass, Court of Thorns and Roses, and Crescent City series.</p>
                     <div class="iconos">
-                        <a href="#">
+                        <a href="https://sarahjmaas.com/" target="_blank">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -200,19 +237,19 @@
                 <div class="picture">
                     <img src="./assets/img/jennifer.jpg" alt="Jennifer L. Armentrout">
                     <div class="sarah">
-                        <a href="https://www.instagram.com/therealsjmaas/" target="_blank">
+                        <a href="https://www.instagram.com/jennifer_l_armentrout/" target="_blank">
                             <i class="bi bi-instagram "></i>
                         </a>
-                        <a href="https://www.facebook.com/theworldofsarahjmaas" target="_blank">
+                        <a href="https://www.facebook.com/JenniferLArmentrout" target="_blank">
                             <i class="bi bi-facebook"></i>
                         </a>
                     </div>
                 </div>
                 <div class="descripcion">
-                    <h4>Sara J. Mass.</h4>
-                    <p>Sarah J. Maas is the #1 New York Times and internationally bestselling author of the Throne of Glass, Court of Thorns and Roses, and Crescent City series.</p>
+                    <h4>Jennifer L. Armentrout</h4>
+                    <p> Jennifer L. Armentrout is an American writer of contemporary romance, new adult and fantasy. Several of her works have made The New York Times Best Seller list.</p>
                     <div class="iconos">
-                        <a href="#">
+                        <a href="https://jenniferlarmentrout.com/books/" alt="page"target="_blank">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -222,19 +259,19 @@
                 <div class="picture">
                     <img src="./assets/img/leigh.jpg" alt="Leigh Bardugo">
                     <div class="sarah">
-                        <a href="https://www.instagram.com/therealsjmaas/" target="_blank">
+                        <a href="https://www.instagram.com/Lbardugo/" target="_blank">
                             <i class="bi bi-instagram "></i>
                         </a>
-                        <a href="https://www.facebook.com/theworldofsarahjmaas" target="_blank">
+                        <a href="https://www.facebook.com/GrishaTrilogy?ref=ts" target="_blank">
                             <i class="bi bi-facebook"></i>
                         </a>
                     </div>
                 </div>
                 <div class="descripcion">
-                    <h4>Sara J. Mass.</h4>
-                    <p>Sarah J. Maas is the #1 New York Times and internationally bestselling author of the Throne of Glass, Court of Thorns and Roses, and Crescent City series.</p>
+                    <h4>Leigh Bardugo.</h4>
+                    <p>Leigh Bardugo is a #1 New York Times bestselling author and the creator of the Grishaverse (now a Netflix original series) which spans the Shadow and Bone trilogy, the Six of Crows duology, The Language of Thorns, and King of Scars—with more to come</p>
                     <div class="iconos">
-                        <a href="#">
+                        <a href="https://www.leighbardugo.com/" target="_blank">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -242,21 +279,21 @@
             </div>
             <div class="lista">
                 <div class="picture">
-                    <img src="./assets/img/tahereh.jpg" alt="Leigh Bardugo">
+                    <img src="./assets/img/tahereh.jpg" alt="Tahereh Mafi">
                     <div class="sarah">
-                        <a href="https://www.instagram.com/therealsjmaas/" target="_blank">
+                        <a href="https://www.instagram.com/Tahereh/" target="_blank">
                             <i class="bi bi-instagram "></i>
                         </a>
-                        <a href="https://www.facebook.com/theworldofsarahjmaas" target="_blank">
+                        <a href="https://www.facebook.com/shattermebooks" target="_blank">
                             <i class="bi bi-facebook"></i>
                         </a>
                     </div>
                 </div>
                 <div class="descripcion">
-                    <h4>Sara J. Mass.</h4>
-                    <p>Sarah J. Maas is the #1 New York Times and internationally bestselling author of the Throne of Glass, Court of Thorns and Roses, and Crescent City series.</p>
+                    <h4>Tahereh Mafi</h4>
+                    <p>Tahereh Mafi is the #1 internationally bestselling and National Book Award-nominated author of books for children and young adults</p>
                     <div class="iconos">
-                        <a href="#">
+                        <a href="https://taherehmafi.com/" target="_blank">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -266,6 +303,41 @@
         
     </section>
     <!--end authors-->
+
+    <!--start footer-->
+    <footer>
+        <div class="footer-1">
+            <div class="logo-1">
+                <a href="#">
+                    <img src="./assets/img/logo5.png" alt="logo">
+                </a>
+            </div>
+            <div class="page-1-box">
+                <div class="page-1">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Library</a>
+                </div>
+            </div>
+            
+            <div class="redes-sociales-box">
+                <div class="redes-sociales">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-envelope"></i>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="copy-box">
+            <div class="copy-1">
+                <p>© 2022 Copyright mafe2020</p>
+            </div>
+        </div>
+        
+    </footer>
+    <!--end footer-->
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
