@@ -441,6 +441,10 @@ footer{
 .redes-sociales i{
     margin-left: 5px;
 }
+.redes-sociales a{
+  text-decoration: none;
+  color: white;
+}
 .copy-box{
     display: flex;
     justify-content: center;
