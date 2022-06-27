@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/wide-shot-of-sandy-erg-desert.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    width:150px;
+    margin-left: 15px;
+}
+.barras{
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: rgba(0, 0, 0, .8); /*para no aplicar opacidad a otros child*/
+    text-align: center;
+    transition: all .5s;
+}
+
+.menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.menu li a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.menu li a.active, .menu li a:hover{
+    color: #3c6e71;
+    transition: .3s;
+}
+
+
+#boton{
+    display: none;/*oculto el check*/
+}
+#boton:checked ~.menu{
+    height: 54vh;
+}
+#boton:checked ~.menu li{
+    display: block;
+}
+
+.about-box{
+    font-family: 'Noto Serif', serif;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 15px;
+    color: white;
+    border: 0.1em solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.about{
+    display: inline-block;
+    margin-top: 20px;
+}
+.primero-1{
+    font-size: 30px;
+}
+.about img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+
+
+/*ecritorio*/
+@media  screen and (min-width:768px){
+    #boton:checked~.menu li{
+        display: inline-block;
+        line-height: 12px;
+        margin-right: 50px;
+        margin-top: 0 20px;
+    }
+    .logo{
+        margin-left: 15px;
+    }
+    nav{
+        height: 100px;
+    }
+    .barras{
+        display: none;
+    }
+    .menu{
+        height: 100px;
+        top:0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .menu li{
+        display: inline-block;
+        line-height: 12px;
+        margin-right: 50px;
+        margin-top: 0 20px;
+        transition: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+   .menu li a{
+    font-size: 12px;
+   }
+
+   .lista{
+    width: 500px;
+   }
+    
+}

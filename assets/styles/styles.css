@@ -459,6 +459,8 @@ footer{
 }
 
 
+
+
 /*ecritorio*/
 @media  screen and (min-width:768px){
     #boton:checked~.menu li{
